@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // initMp3Player
+        // initMp3Player   //这里forResource里面填写文件名
         guard let url = Bundle.main.url(forResource: "objectionJapan", withExtension: "mp3") else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
