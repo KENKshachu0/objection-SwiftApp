@@ -11,14 +11,14 @@ import CoreMotion
 class ViewController: UIViewController {
     var player: AVAudioPlayer?
     let motionManager = CMMotionManager()
-  
-    
-    
+    @IBOutlet weak var objectionImageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // initMp3Player   //这里forResource里面填写文件名
+        objectionImageView.isHidden = true
+        
+        // initMp3Player     //这里forResource里面填写文件名
         guard let url = Bundle.main.url(forResource: "objectionJapan", withExtension: "mp3") else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -37,8 +37,9 @@ class ViewController: UIViewController {
                 let accelerationMagnitude = sqrt(pow(acceleration.x, 2) + pow(acceleration.y, 2) + pow(acceleration.z, 2))
                 
                 // 根据加速度大小判断是否触发抖动
-                if accelerationMagnitude > 1.0 { // 这个阈值可以根据需要调整
+                if accelerationMagnitude > 1.4 { // 这个阈值可以根据需要调整
                     self?.playAudio()
+                    self?.showImageForSeconds(1)
                 }
             }
         }
@@ -47,5 +48,14 @@ class ViewController: UIViewController {
     // play
     func playAudio() {
         player?.play()
+        
     }
+    
+    func showImageForSeconds(_ seconds: TimeInterval) {
+        objectionImageView.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline:.now() + seconds) {
+            self.objectionImageView.isHidden = true
+        }
+    }
+    
 }

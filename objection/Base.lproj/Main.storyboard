@@ -15,14 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="huizhang" translatesAutoresizingMaskIntoConstraints="NO" id="spI-Ux-ii3">
-                                <rect key="frame" x="76" y="59" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="520px-ObjectionJapanesePCTrilogy.png" translatesAutoresizingMaskIntoConstraints="NO" id="glY-dr-wQi">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="objectionImageView" destination="glY-dr-wQi" id="hYr-qD-IoJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="huizhang" width="1024" height="1024"/>
+        <image name="520px-ObjectionJapanesePCTrilogy.png" width="390" height="270"/>
     </resources>
 </document>
