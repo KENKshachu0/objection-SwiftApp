@@ -19,6 +19,7 @@
 		BB9BC8782BA4E0D2001F2441 /* kenk.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BB9BC8772BA4E0D2001F2441 /* kenk.JPG */; };
 		BB9BC87A2BA4E3BB001F2441 /* objectionJapan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB9BC8792BA4E3BB001F2441 /* objectionJapan.mp3 */; };
 		BB9BC87C2BA68E36001F2441 /* 520px-ObjectionJapanesePCTrilogy.png in Resources */ = {isa = PBXBuildFile; fileRef = BB9BC87B2BA68E36001F2441 /* 520px-ObjectionJapanesePCTrilogy.png */; };
+		BBFD92972BAD6BCF002F9AA8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD92962BAD6BCF002F9AA8 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BB9BC8772BA4E0D2001F2441 /* kenk.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kenk.JPG; sourceTree = "<group>"; };
 		BB9BC8792BA4E3BB001F2441 /* objectionJapan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = objectionJapan.mp3; sourceTree = "<group>"; };
 		BB9BC87B2BA68E36001F2441 /* 520px-ObjectionJapanesePCTrilogy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "520px-ObjectionJapanesePCTrilogy.png"; sourceTree = "<group>"; };
+		BBFD92962BAD6BCF002F9AA8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BB9BC8472BA4DC9D001F2441 /* SceneDelegate.swift */,
 				BB9BC8492BA4DC9D001F2441 /* ViewController.swift */,
 				BB9BC84B2BA4DC9D001F2441 /* Main.storyboard */,
+				BBFD92962BAD6BCF002F9AA8 /* SettingViewController.swift */,
 				BB9BC87B2BA68E36001F2441 /* 520px-ObjectionJapanesePCTrilogy.png */,
 				BB9BC84E2BA4DC9E001F2441 /* Assets.xcassets */,
 				BB9BC8792BA4E3BB001F2441 /* objectionJapan.mp3 */,
@@ -273,6 +276,7 @@
 				BB9BC84A2BA4DC9D001F2441 /* ViewController.swift in Sources */,
 				BB9BC8462BA4DC9D001F2441 /* AppDelegate.swift in Sources */,
 				BB9BC8482BA4DC9D001F2441 /* SceneDelegate.swift in Sources */,
+				BBFD92972BAD6BCF002F9AA8 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
